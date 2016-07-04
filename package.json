@@ -1,6 +1,6 @@
 {
   "name": "sophie-fonts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Sophie font styles",
   "main": "index.js",
   "scripts": {
