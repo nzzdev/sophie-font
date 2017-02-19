@@ -1,10 +1,10 @@
 {
   "name": "sophie-font",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Sophie font styles",
   "main": "index.js",
   "scripts": {
-    "test": "node scripts/test.js"
+    "test": "node tests/sass.js"
   },
   "author": "Beni Buess <beni.buess@nzz.ch>",
   "dependencies": {
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "pre-commit": "^1.1.3",
-    "sophie-color": "git+ssh://git@github.com/nzzdev/sophie-color.git#0.0.1"
+    "sophie-color": "git+ssh://git@github.com/nzzdev/sophie-color.git#1.0.0"
   },
   "pre-commit": [
     "test"
@@ -27,7 +27,7 @@
       ]
     },
     "dependencies": {
-      "sophie-color": "^0.0.1"
+      "sophie-color": "^1"
     }
   }
 }
