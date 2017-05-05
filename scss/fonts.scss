@@ -1,12 +1,11 @@
 @import "vars";
-@import "sophie-color/scss/vars";
 
 .s-font-text-s {
   font-family: $font-family-serif;
   font-size: $font-text-s-size;
   line-height: $font-text-s-line-height;
-  color: $s-color-gray-8;
-  font-weight: 400;
+  color: $font-text-s-color;
+  font-weight: $font-text-s-font-weight;
 
   &--strong {
     font-style: italic;
@@ -17,8 +16,8 @@
   font-family: $font-family-serif;
   font-size: $font-text-size;
   line-height: $font-text-line-height;
-  color: $s-color-gray-8;
-  font-weight: 400;
+  color: $font-text-color;
+  font-weight: $font-text-font-weight;
 
   &--strong {
     font-style: italic;
@@ -29,19 +28,19 @@
   font-family: $font-family-sans;
   font-size: $font-note-s-size;
   line-height: $font-note-s-line-height;
-  color: $s-color-gray-8;
-  font-weight: 400;
+  color: $font-note-s-color;
+  font-weight: $font-note-s-font-weight;
 
   &--strong {
-    font-weight: 700;
+    font-weight: $font-note-s--strong-font-weight;
   }
 
   &--light {
-    color: $s-color-gray-6;
+    color: $font-note-s--light-color;
   }
 
   &--superlight {
-    color: $s-color-gray-5;
+    color: $font-note-s--superlight-color;
   }
 
 }
@@ -50,26 +49,26 @@
   font-family: $font-family-sans;
   font-size: $font-note-size;
   line-height: $font-note-line-height;
-  color: $s-color-gray-8;
-  font-weight: 400;
+  color: $font-note-color;
+  font-weight: $font-note-font-weight;
 
   &--strong {
-    font-weight: 700;
+    font-weight: $font-note--strong-font-weight;
   }
 
   &--light {
-    color: $s-color-gray-6;
+    color: $font-note--light-color;
   }
 
   &--superlight {
-    color: $s-color-gray-5;
+    color: $font-note--superlight-color;
   }
 }
 
 @mixin s-font-title() {
   font-family: $font-family-sans;
-  color: $s-color-gray-8;
-  font-weight: 700;
+  color: $font-title-color;
+  font-weight: $font-title-font-weight;
 }
 
 .s-font-title-xs {
@@ -98,7 +97,7 @@
   &--contrast {
     font-family: $font-family-serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: $font-title-l--contrast-font-weight;
   }
 }
 
@@ -110,7 +109,7 @@
   &--contrast {
     font-family: $font-family-serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: $font-title-xl--contrast-font-weight;
   }
 }
 
