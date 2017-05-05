@@ -4,8 +4,8 @@
   font-family: $font-family-serif;
   font-size: $font-text-s-size;
   line-height: $font-text-s-line-height;
-  color: $font-text-s-color;
-  font-weight: $font-text-s-font-weight;
+  color: $font-color;
+  font-weight: $font-weight;
 
   &--strong {
     font-style: italic;
@@ -16,8 +16,8 @@
   font-family: $font-family-serif;
   font-size: $font-text-size;
   line-height: $font-text-line-height;
-  color: $font-text-color;
-  font-weight: $font-text-font-weight;
+  color: $font-color;
+  font-weight: $font-weight;
 
   &--strong {
     font-style: italic;
@@ -28,19 +28,19 @@
   font-family: $font-family-sans;
   font-size: $font-note-s-size;
   line-height: $font-note-s-line-height;
-  color: $font-note-s-color;
-  font-weight: $font-note-s-font-weight;
+  color: $font-color;
+  font-weight: $font-weight;
 
   &--strong {
-    font-weight: $font-note-s--strong-font-weight;
+    font-weight: $font-weight-bold;
   }
 
   &--light {
-    color: $font-note-s--light-color;
+    color: $font-color-light;
   }
 
   &--superlight {
-    color: $font-note-s--superlight-color;
+    color: $font-color-superlight;
   }
 
 }
@@ -49,26 +49,26 @@
   font-family: $font-family-sans;
   font-size: $font-note-size;
   line-height: $font-note-line-height;
-  color: $font-note-color;
-  font-weight: $font-note-font-weight;
+  color: $font-color;
+  font-weight: $font-weight;
 
   &--strong {
-    font-weight: $font-note--strong-font-weight;
+    font-weight: $font-weight-bold;
   }
 
   &--light {
-    color: $font-note--light-color;
+    color: $font-color-light;
   }
 
   &--superlight {
-    color: $font-note--superlight-color;
+    color: $font-color-superlight;
   }
 }
 
 @mixin s-font-title() {
   font-family: $font-family-sans;
-  color: $font-title-color;
-  font-weight: $font-title-font-weight;
+  color: $font-color;
+  font-weight: $font-weight-bold;
 }
 
 .s-font-title-xs {
@@ -97,7 +97,7 @@
   &--contrast {
     font-family: $font-family-serif;
     font-style: italic;
-    font-weight: $font-title-l--contrast-font-weight;
+    font-weight: $font-weight;
   }
 }
 
@@ -109,7 +109,7 @@
   &--contrast {
     font-family: $font-family-serif;
     font-style: italic;
-    font-weight: $font-title-xl--contrast-font-weight;
+    font-weight: $font-weight;
   }
 }
 
