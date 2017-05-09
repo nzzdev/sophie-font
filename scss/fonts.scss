@@ -1,12 +1,11 @@
 @import "vars";
-@import "sophie-color/scss/vars";
 
 .s-font-text-s {
   font-family: $font-family-serif;
-  font-size: 15px;
-  line-height: 21px;
-  color: $s-color-gray-8;
-  font-weight: 400;
+  font-size: $font-text-s-size;
+  line-height: $font-text-s-line-height;
+  color: $font-color;
+  font-weight: $font-weight;
 
   &--strong {
     font-style: italic;
@@ -15,10 +14,10 @@
 
 .s-font-text {
   font-family: $font-family-serif;
-  font-size: 17px;
-  line-height: 25px;
-  color: $s-color-gray-8;
-  font-weight: 400;
+  font-size: $font-text-size;
+  line-height: $font-text-line-height;
+  color: $font-color;
+  font-weight: $font-weight;
 
   &--strong {
     font-style: italic;
@@ -27,90 +26,90 @@
 
 .s-font-note-s {
   font-family: $font-family-sans;
-  font-size: 12px;
-  line-height: 16px;
-  color: $s-color-gray-8;
-  font-weight: 400;
+  font-size: $font-note-s-size;
+  line-height: $font-note-s-line-height;
+  color: $font-color;
+  font-weight: $font-weight;
 
   &--strong {
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
 
   &--light {
-    color: $s-color-gray-6;
+    color: $font-color-light;
   }
 
   &--superlight {
-    color: $s-color-gray-5;
+    color: $font-color-superlight;
   }
 
 }
 
 .s-font-note {
   font-family: $font-family-sans;
-  font-size: 14px;
-  line-height: 18px;
-  color: $s-color-gray-8;
-  font-weight: 400;
+  font-size: $font-note-size;
+  line-height: $font-note-line-height;
+  color: $font-color;
+  font-weight: $font-weight;
 
   &--strong {
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
 
   &--light {
-    color: $s-color-gray-6;
+    color: $font-color-light;
   }
 
   &--superlight {
-    color: $s-color-gray-5;
+    color: $font-color-superlight;
   }
 }
 
 @mixin s-font-title() {
   font-family: $font-family-sans;
-  color: $s-color-gray-8;
-  font-weight: 700;
+  color: $font-color;
+  font-weight: $font-weight-bold;
 }
 
 .s-font-title-xs {
   @include s-font-title;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: $font-title-xs-size;
+  line-height: $font-title-xs-line-height;
 }
 
 .s-font-title-s {
   @include s-font-title;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: $font-title-s-size;
+  line-height: $font-title-s-line-height;
 }
 
 .s-font-title {
   @include s-font-title;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: $font-title-size;
+  line-height: $font-title-line-height;
 }
 
 .s-font-title-l {
   @include s-font-title;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: $font-title-l-size;
+  line-height: $font-title-l-line-height;
 
   &--contrast {
     font-family: $font-family-serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: $font-weight;
   }
 }
 
 .s-font-title-xl {
   @include s-font-title;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: $font-title-xl-size;
+  line-height: $font-title-xl-line-height;
 
   &--contrast {
     font-family: $font-family-serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: $font-weight;
   }
 }
 
