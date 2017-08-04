@@ -1,33 +1,34 @@
 @import "sophie-color/scss/vars";
 
-$font-family-sans: Roboto, Arial, sans-serif;
-$font-family-serif: PT Serif, Georgia, Century Schoolbook L, serif;
+$font-family-sans: gt, Helvetica, Arial, sans-serif;
+$font-family-serif: pensum, Georgia, sans-serif;
 
-$font-color: $s-color-gray-8;
-$font-color-light: $s-color-gray-6;
+$font-color: $s-color-gray-9;
+$font-color-light: $s-color-gray-7;
 $font-color-superlight: $s-color-gray-5;
 
-$font-weight: 400;
-$font-weight-bold: 700;
+$font-weight: 100;
+$font-weight-sans: 300;
+$font-weight-bold: 500;
 
-$font-text-s-size: 15px;
-$font-text-s-line-height: 21px;
-$font-text-size: 17px;
-$font-text-line-height: 25px;
+$font-text-s-size: 17px;
+$font-text-s-line-height: 23px;
+$font-text-size: 18px;
+$font-text-line-height: 26px;
 
-$font-note-s-size: 12px;
-$font-note-s-line-height: 16px;
+$font-note-s-size: 11px;
+$font-note-s-line-height: 14px;
 
-$font-note-size: 14px;
-$font-note-line-height: 18px;
+$font-note-size: 13px;
+$font-note-line-height: 17px;
 
-$font-title-xs-size: 14px;
-$font-title-xs-line-height: 18px;
-$font-title-s-size: 16px;
-$font-title-s-line-height: 21px;
-$font-title-size: 20px;
-$font-title-line-height: 24px;
-$font-title-l-size: 26px;
+$font-title-xs-size: 20px;
+$font-title-xs-line-height: 22px;
+$font-title-s-size: 22px;
+$font-title-s-line-height: 24px;
+$font-title-size: 24px;
+$font-title-line-height: 26px;
+$font-title-l-size: 27px;
 $font-title-l-line-height: 31px;
-$font-title-xl-size: 36px;
-$font-title-xl-line-height: 43px;
+$font-title-xl-size: 42px;
+$font-title-xl-line-height: 46px;

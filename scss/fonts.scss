@@ -5,10 +5,13 @@
   font-size: $font-text-s-size;
   line-height: $font-text-s-line-height;
   color: $font-color;
-  font-weight: $font-weight;
+  font-weight: $font-weight-sans;
 
   &--strong {
-    font-style: italic;
+    font-family: $font-family-sans;
+    font-weight: $font-weight;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -17,10 +20,13 @@
   font-size: $font-text-size;
   line-height: $font-text-line-height;
   color: $font-color;
-  font-weight: $font-weight;
+  font-weight: $font-weight-sans;
 
   &--strong {
-    font-style: italic;
+    font-family: $font-family-sans;
+    font-weight: $font-weight;
+    font-size: 17px;
+    line-height: 23px;
   }
 }
 
@@ -47,10 +53,10 @@
 
 .s-font-note {
   font-family: $font-family-sans;
+  font-weight: $font-weight;
   font-size: $font-note-size;
   line-height: $font-note-line-height;
   color: $font-color;
-  font-weight: $font-weight;
 
   &--strong {
     font-weight: $font-weight-bold;
@@ -66,7 +72,7 @@
 }
 
 @mixin s-font-title() {
-  font-family: $font-family-sans;
+  font-family: $font-family-serif;
   color: $font-color;
   font-weight: $font-weight-bold;
 }
@@ -93,10 +99,10 @@
   @include s-font-title;
   font-size: $font-title-l-size;
   line-height: $font-title-l-line-height;
+  
 
   &--contrast {
     font-family: $font-family-serif;
-    font-style: italic;
     font-weight: $font-weight;
   }
 }
@@ -108,15 +114,16 @@
 
   &--contrast {
     font-family: $font-family-serif;
-    font-style: italic;
     font-weight: $font-weight;
   }
 }
 
 .s-font-serif {
   font-family: $font-family-serif;
+  font-weight: $font-weight;
 }
 
 .s-font-sans {
   font-family: $font-family-sans;
+  font-weight: $font-weight-sans;
 }
