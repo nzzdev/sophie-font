@@ -1,74 +1,68 @@
 @import "vars";
 
-.s-font-text-s {
+@mixin s-font-text() {
   font-family: $font-family-serif;
-  font-size: $font-text-s-size;
-  line-height: $font-text-s-line-height;
+  font-weight: $font-weight-light;
   color: $font-color;
-  font-weight: $font-weight-sans;
+}
 
+@mixin s-font-text--strong() {
+  font-family: $font-family-sans;
+  font-weight: $font-weight-light;
+}
+
+.s-font-text-s {
+  line-height: $font-text-s-line-height;
+  font-size: $font-text-s-size;
+  @include s-font-text;
+  
   &--strong {
-    font-family: $font-family-sans;
-    font-weight: $font-weight;
     font-size: 16px;
     line-height: 22px;
+    @include s-font-text--strong;
   }
 }
 
 .s-font-text {
-  font-family: $font-family-serif;
   font-size: $font-text-size;
   line-height: $font-text-line-height;
-  color: $font-color;
-  font-weight: $font-weight-sans;
-
+  @include s-font-text;
+  
   &--strong {
-    font-family: $font-family-sans;
-    font-weight: $font-weight;
     font-size: 17px;
     line-height: 23px;
+    @include s-font-text--strong;
+  }
+}
+
+@mixin s-font-note() {
+  font-family: $font-family-sans;
+  font-weight: $font-weight-light;
+  color: $font-color;
+  
+  &--strong {
+    font-weight: $font-weight-bold;
+  }
+
+  &--light {
+    color: $font-color-light;
+  }
+
+  &--superlight {
+    color: $font-color-superlight;
   }
 }
 
 .s-font-note-s {
-  font-family: $font-family-sans;
   font-size: $font-note-s-size;
   line-height: $font-note-s-line-height;
-  color: $font-color;
-  font-weight: $font-weight;
-
-  &--strong {
-    font-weight: $font-weight-bold;
-  }
-
-  &--light {
-    color: $font-color-light;
-  }
-
-  &--superlight {
-    color: $font-color-superlight;
-  }
-
+  @include s-font-note;
 }
 
 .s-font-note {
-  font-family: $font-family-sans;
-  font-weight: $font-weight;
   font-size: $font-note-size;
   line-height: $font-note-line-height;
-  color: $font-color;
-
-  &--strong {
-    font-weight: $font-weight-bold;
-  }
-
-  &--light {
-    color: $font-color-light;
-  }
-
-  &--superlight {
-    color: $font-color-superlight;
-  }
+  @include s-font-note;
 }
 
 @mixin s-font-title() {
@@ -99,11 +93,10 @@
   @include s-font-title;
   font-size: $font-title-l-size;
   line-height: $font-title-l-line-height;
-  
 
   &--contrast {
     font-family: $font-family-serif;
-    font-weight: $font-weight;
+    font-weight: $font-weight-light;
   }
 }
 
@@ -114,16 +107,16 @@
 
   &--contrast {
     font-family: $font-family-serif;
-    font-weight: $font-weight;
+    font-weight: $font-weight-light;
   }
 }
 
 .s-font-serif {
   font-family: $font-family-serif;
-  font-weight: $font-weight;
+  font-weight: $font-weight-light;
 }
 
 .s-font-sans {
   font-family: $font-family-sans;
-  font-weight: $font-weight-sans;
+  font-weight: $font-weight-light;
 }
