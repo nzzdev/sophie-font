@@ -2,13 +2,13 @@
 
 @mixin s-font-text() {
   font-family: $font-family-serif;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-serif;
   color: $font-color;
 }
 
 @mixin s-font-text--strong() {
   font-family: $font-family-sans;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-sans;
 }
 
 .s-font-text-s {
@@ -37,7 +37,7 @@
 
 @mixin s-font-note() {
   font-family: $font-family-sans;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-sans;
   color: $font-color;
   
   &--strong {
@@ -96,7 +96,7 @@
 
   &--contrast {
     font-family: $font-family-serif;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-serif;
   }
 }
 
@@ -107,16 +107,16 @@
 
   &--contrast {
     font-family: $font-family-serif;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-serif;
   }
 }
 
 .s-font-serif {
   font-family: $font-family-serif;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-serif;
 }
 
 .s-font-sans {
   font-family: $font-family-sans;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-sans;
 }
