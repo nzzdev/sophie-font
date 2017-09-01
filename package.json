@@ -27,7 +27,7 @@
       ]
     },
     "dependencies": {
-      "sophie-color": "^1"
+      "sophie-color": "^1.1.0-rc"
     }
   }
 }
