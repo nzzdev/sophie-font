@@ -1,6 +1,6 @@
 {
   "name": "sophie-font",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Sophie font styles",
   "main": "index.js",
   "scripts": {
@@ -18,16 +18,8 @@
     "test"
   ],
   "sophie": {
-    "sass": {
-      "includePaths": [
-        "scss"
-      ],
-      "vars": [
-        "scss/vars.scss"
-      ]
-    },
     "dependencies": {
-      "sophie-color": "^1"
+      "sophie-color": "1.1.x"
     }
   }
 }
