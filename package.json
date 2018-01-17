@@ -8,7 +8,8 @@
   },
   "author": "Beni Buess <beni.buess@nzz.ch>",
   "dependencies": {
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.8.0",
+    "node-sass-json-importer": "^3.1.0"
   },
   "devDependencies": {
     "pre-commit": "^1.1.3",
