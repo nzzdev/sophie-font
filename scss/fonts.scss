@@ -6,20 +6,13 @@
   color: $font-color;
 }
 
-@mixin s-font-text--strong() {
-  font-family: $font-family-sans;
-  font-weight: $font-weight-sans;
-}
-
 .s-font-text-s {
   line-height: $font-text-s-line-height;
   font-size: $font-text-s-size;
   @include s-font-text;
-  
+
   &--strong {
-    font-size: 16px;
-    line-height: 22px;
-    @include s-font-text--strong;
+    font-weight: $font-weight-bold;
   }
 }
 
@@ -27,11 +20,9 @@
   font-size: $font-text-size;
   line-height: $font-text-line-height;
   @include s-font-text;
-  
+
   &--strong {
-    font-size: 17px;
-    line-height: 23px;
-    @include s-font-text--strong;
+    font-weight: $font-weight-bold;
   }
 }
 
@@ -39,7 +30,7 @@
   font-family: $font-family-sans;
   font-weight: $font-weight-sans;
   color: $font-color;
-  
+
   &--strong {
     font-weight: $font-weight-bold;
   }
@@ -72,7 +63,9 @@
 }
 
 .s-font-title-xs {
-  @include s-font-title;
+  font-family: $font-family-sans;
+  color: $font-color;
+  font-weight: $font-weight-sans;
   font-size: $font-title-xs-size;
   line-height: $font-title-xs-line-height;
 }
