@@ -41,6 +41,7 @@
 
   &--mono {
     font-family: $font-family-sans-mono;
+    font-weight: $font-weight-sans-light;
   }
 }
 
@@ -51,6 +52,7 @@
 
   &--mono {
     font-size: $font-note-s-size - 1;
+    font-weight: $font-weight-sans-light;
   }
 }
 
@@ -61,6 +63,7 @@
 
   &--mono {
     font-size: $font-note-size - 1;
+    font-weight: $font-weight-sans-light;
   }
 }
 
@@ -71,6 +74,7 @@
 
   &--mono {
     font-size: $font-note-l-size - 1;
+    font-weight: $font-weight-sans-light;
   }
 }
 
