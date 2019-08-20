@@ -67,17 +67,6 @@
   }
 }
 
-.s-font-note-l {
-  font-size: $font-note-l-size;
-  line-height: $font-note-l-line-height;
-  @include s-font-note;
-
-  &--mono {
-    font-size: $font-note-l-size - 1;
-    font-weight: $font-weight-sans-light;
-  }
-}
-
 @mixin s-font-title() {
   font-family: $font-family-sans;
   font-weight: $font-weight-sans-bold;
