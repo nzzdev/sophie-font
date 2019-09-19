@@ -51,7 +51,6 @@
   @include s-font-note;
 
   &--mono {
-    font-size: $font-note-s-size - 1;
     font-weight: $font-weight-sans-light;
   }
 }
@@ -62,7 +61,6 @@
   @include s-font-note;
 
   &--mono {
-    font-size: $font-note-size - 1;
     font-weight: $font-weight-sans-light;
   }
 }
