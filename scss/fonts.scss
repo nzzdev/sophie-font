@@ -39,9 +39,16 @@
     font-weight: $font-weight-sans-light;
   }
 
+  // Deprecated, for fixed-width numerals use --tabularnums instead
   &--mono {
     font-family: $font-family-sans-mono;
     font-weight: $font-weight-sans-light;
+  }
+
+  // Use to enable fixed-width numerals for charts and tables
+  &--tabularnums {
+    font-feature-settings: "tnum" 1; // Fallback for IE11
+    font-variant-numeric: tabular-nums; // Modern browsers
   }
 }
 
