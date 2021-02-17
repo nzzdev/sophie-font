@@ -39,12 +39,6 @@
     font-weight: $font-weight-sans-light;
   }
 
-  // Deprecated, for fixed-width numerals use --tabularnums instead
-  &--mono {
-    font-family: $font-family-sans-mono;
-    font-weight: $font-weight-sans-light;
-  }
-
   // Use to enable fixed-width numerals for charts and tables
   &--tabularnums {
     font-feature-settings: "tnum" 1; // Fallback for IE11
@@ -56,20 +50,12 @@
   font-size: $font-note-s-size;
   line-height: $font-note-s-line-height;
   @include s-font-note;
-
-  &--mono {
-    font-weight: $font-weight-sans-light;
-  }
 }
 
 .s-font-note {
   font-size: $font-note-size;
   line-height: $font-note-line-height;
   @include s-font-note;
-
-  &--mono {
-    font-weight: $font-weight-sans-light;
-  }
 }
 
 @mixin s-font-title() {
