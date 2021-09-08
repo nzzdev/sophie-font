@@ -91,3 +91,27 @@
   font-family: $font-family-sans;
   font-weight: $font-weight-sans-regular;
 }
+
+@mixin s-font-ui() {
+  font-family: $font-family-sans;
+  font-weight: $font-weight-sans-regular;
+  color: $font-color;
+
+  &--strong {
+    font-weight: $font-weight-sans-bold;
+  }
+
+  &--light {
+    font-weight: $font-weight-sans-light;
+  }
+
+  // Use to enable fixed-width numerals for charts and tables
+  &--tabularnums {
+    font-feature-settings: "tnum" 1; // Fallback for IE11
+    font-variant-numeric: tabular-nums; // Modern browsers
+  }
+}
+
+.s-font-ui {
+  @include s-font-ui;
+}
