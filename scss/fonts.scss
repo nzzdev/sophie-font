@@ -1,4 +1,4 @@
-@import "vars";
+@import 'vars';
 
 @mixin s-font-text() {
   font-family: $font-family-serif;
@@ -41,7 +41,7 @@
 
   // Use to enable fixed-width numerals for charts and tables
   &--tabularnums {
-    font-feature-settings: "tnum" 1; // Fallback for IE11
+    font-feature-settings: 'tnum' 1; // Fallback for IE11
     font-variant-numeric: tabular-nums; // Modern browsers
   }
 }
@@ -107,11 +107,13 @@
 
   // Use to enable fixed-width numerals for charts and tables
   &--tabularnums {
-    font-feature-settings: "tnum" 1; // Fallback for IE11
+    font-feature-settings: 'tnum' 1; // Fallback for IE11
     font-variant-numeric: tabular-nums; // Modern browsers
   }
 }
 
 .s-font-ui {
+  font-size: $font-ui-size;
+  line-height: $font-ui-line-height;
   @include s-font-ui;
 }
