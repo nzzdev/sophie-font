@@ -117,3 +117,9 @@
   line-height: $font-ui-line-height;
   @include s-font-ui;
 }
+
+.s-font-ui-s {
+  font-size: $font-ui-s-size;
+  line-height: $font-ui-s-line-height;
+  @include s-font-ui;
+}

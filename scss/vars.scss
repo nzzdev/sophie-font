@@ -34,5 +34,8 @@ $font-title-l-size: 18px;
 $font-title-l-line-height: 24px;
 
 // Based on https://www.figma.com/file/QqppDkF7HeCWmet6IS7Y4Y/NZZ-Design-System-2020?node-id=22%3A136
-$font-ui-size: 16px;
-$font-ui-line-height: 26px;
+$font-ui-size: 1rem; // This is currently 16px
+$font-ui-line-height: 1.5rem; // This translates to 24px
+
+$font-ui-s-size: 0.875rem; // This would correspondent to 14px
+$font-ui-s-line-height: 1.375rem; // This would correspondent to 22px
