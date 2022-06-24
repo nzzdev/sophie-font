@@ -1,9 +1,9 @@
-@import "sophie-color/vars/general.json";
-
 $font-family-sans: nzz-sans-serif, Helvetica, Arial;
 $font-family-serif: nzz-serif, Georgia;
 
-$font-color: var(--black);
+// --q-primary-text-color is defined in nzzdev/sophie-q
+// .s-q-item
+$font-color: var(--q-primary-text-color, #000000);
 
 $font-weight-serif-regular: 100;
 $font-weight-serif-bold: 500;

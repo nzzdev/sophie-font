@@ -1,7 +1,7 @@
 @import 'vars';
 
 @mixin font-color() {
-  color: #000; // fallback
+  color: #000000; // fallback
   color: $font-color;
 }
 
