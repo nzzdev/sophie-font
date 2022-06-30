@@ -1,9 +1,14 @@
 @import 'vars';
 
+@mixin font-color() {
+  color: #000000; // fallback
+  color: $font-color;
+}
+
 @mixin s-font-text() {
   font-family: $font-family-serif;
   font-weight: $font-weight-serif-regular;
-  color: $font-color;
+  @include font-color;
 }
 
 .s-font-text-s {
@@ -29,7 +34,7 @@
 @mixin s-font-note() {
   font-family: $font-family-sans;
   font-weight: $font-weight-sans-regular;
-  color: $font-color;
+  @include font-color;
 
   &--strong {
     font-weight: $font-weight-sans-bold;
@@ -61,7 +66,7 @@
 @mixin s-font-title() {
   font-family: $font-family-sans;
   font-weight: $font-weight-sans-bold;
-  color: $font-color;
+  @include font-color;
 }
 
 .s-font-title-s {
@@ -95,7 +100,7 @@
 @mixin s-font-ui() {
   font-family: $font-family-sans;
   font-weight: $font-weight-sans-regular;
-  color: $font-color;
+  @include font-color;
 
   &--strong {
     font-weight: $font-weight-sans-bold;
