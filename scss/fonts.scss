@@ -36,7 +36,7 @@
   font-weight: $font-weight-sans-regular;
 	@include font-color;
 
-	:not(:root:has(.font-sans)) & {
+	:root:not(:has(.font-sans)) & {
 		//we're in nuxt territory
 		font-weight: $font-weight-sans-nuxt-regular;
 	}
@@ -48,9 +48,9 @@
   &--light {
     font-weight: $font-weight-sans-light;
 
-	  :not(:root:has(.font-sans)) & {
+	  :root:not(:has(.font-sans)) & {
 			//we're in nuxt territory
-			font-weight: $font-weight-sans-nuxt-regular;
+			font-weight: $font-weight-sans-nuxt-light;
 		}
   }
 
