@@ -4,7 +4,8 @@
   "description": "Sophie font styles",
   "main": "index.js",
   "scripts": {
-    "test": "node tests/sass.js",
+    "test": "node --test test/sass.js",
+    "update-snapshots": "UPDATE_SNAPSHOTS=1 node --test test/sass.js",
     "prepare": "husky"
   },
   "author": "Beni Buess <beni.buess@nzz.ch>",
