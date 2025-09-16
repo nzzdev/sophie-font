@@ -34,7 +34,12 @@
 @mixin s-font-note() {
   font-family: $font-family-sans;
   font-weight: $font-weight-sans-regular;
-  @include font-color;
+	@include font-color;
+
+	:not(:root:has(.font-sans)) & {
+		//we're in nuxt territory
+		font-weight: $font-weight-sans-nuxt-regular;
+	}
 
   &--strong {
     font-weight: $font-weight-sans-bold;
@@ -42,6 +47,11 @@
 
   &--light {
     font-weight: $font-weight-sans-light;
+
+	  :not(:root:has(.font-sans)) & {
+			//we're in nuxt territory
+			font-weight: $font-weight-sans-nuxt-regular;
+		}
   }
 
   // Use to enable fixed-width numerals for charts and tables
