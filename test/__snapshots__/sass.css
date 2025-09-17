@@ -1,0 +1,164 @@
+/* fonts.scss */
+.s-font-text-s {
+  line-height: 28px;
+  font-size: 18px;
+  font-family: var(--nzz-font-serif), "NZZ Serif", nzz-serif, "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+}
+.s-font-text-s--strong {
+  font-weight: 500;
+}
+
+.s-font-text {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: var(--nzz-font-serif), "NZZ Serif", nzz-serif, "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+}
+.s-font-text--strong {
+  font-weight: 500;
+}
+
+.s-font-note-s {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--nzz-font-sans), "NZZ Sans", nzz-sans-serif, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+}
+:root:not(:has(.font-sans)) .s-font-note-s {
+  font-weight: 100;
+}
+.s-font-note-s--strong {
+  font-weight: 500;
+}
+.s-font-note-s--light {
+  font-weight: 300;
+}
+:root:not(:has(.font-sans)) .s-font-note-s--light {
+  font-weight: 50;
+}
+.s-font-note-s--tabularnums {
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.s-font-note {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: var(--nzz-font-sans), "NZZ Sans", nzz-sans-serif, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+}
+:root:not(:has(.font-sans)) .s-font-note {
+  font-weight: 100;
+}
+.s-font-note--strong {
+  font-weight: 500;
+}
+.s-font-note--light {
+  font-weight: 300;
+}
+:root:not(:has(.font-sans)) .s-font-note--light {
+  font-weight: 50;
+}
+.s-font-note--tabularnums {
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.s-font-title-s {
+  font-family: var(--nzz-font-sans), "NZZ Sans", nzz-sans-serif, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 500;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.s-font-title {
+  font-family: var(--nzz-font-sans), "NZZ Sans", nzz-sans-serif, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 500;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.s-font-title-l {
+  font-family: var(--nzz-font-sans), "NZZ Sans", nzz-sans-serif, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 500;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.s-font-serif {
+  font-family: var(--nzz-font-serif), "NZZ Serif", nzz-serif, "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+}
+
+.s-font-sans {
+  font-family: var(--nzz-font-sans), "NZZ Sans", nzz-sans-serif, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 400;
+}
+
+.s-font-ui {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--nzz-font-sans), "NZZ Sans", nzz-sans-serif, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+}
+:root:not(:has(.font-sans)) .s-font-ui {
+  font-weight: 100;
+}
+.s-font-ui--strong {
+  font-weight: 500;
+}
+.s-font-ui--light {
+  font-weight: 300;
+}
+:root:not(:has(.font-sans)) .s-font-ui--light {
+  font-weight: 50;
+}
+.s-font-ui--tabularnums {
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.s-font-ui-s {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-family: var(--nzz-font-sans), "NZZ Sans", nzz-sans-serif, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  color: var(--q-primary-text-color, #000000);
+}
+:root:not(:has(.font-sans)) .s-font-ui-s {
+  font-weight: 100;
+}
+.s-font-ui-s--strong {
+  font-weight: 500;
+}
+.s-font-ui-s--light {
+  font-weight: 300;
+}
+:root:not(:has(.font-sans)) .s-font-ui-s--light {
+  font-weight: 50;
+}
+.s-font-ui-s--tabularnums {
+  font-feature-settings: "tnum" 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* vars.scss */
+

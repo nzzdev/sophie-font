@@ -34,7 +34,12 @@
 @mixin s-font-note() {
   font-family: $font-family-sans;
   font-weight: $font-weight-sans-regular;
-  @include font-color;
+	@include font-color;
+
+	:root:not(:has(.font-sans)) & {
+		//we're in nuxt territory
+		font-weight: $font-weight-sans-nuxt-regular;
+	}
 
   &--strong {
     font-weight: $font-weight-sans-bold;
@@ -42,6 +47,11 @@
 
   &--light {
     font-weight: $font-weight-sans-light;
+
+	  :root:not(:has(.font-sans)) & {
+			//we're in nuxt territory
+			font-weight: $font-weight-sans-nuxt-light;
+		}
   }
 
   // Use to enable fixed-width numerals for charts and tables
@@ -97,34 +107,14 @@
   font-weight: $font-weight-sans-regular;
 }
 
-@mixin s-font-ui() {
-  font-family: $font-family-sans;
-  font-weight: $font-weight-sans-regular;
-  @include font-color;
-
-  &--strong {
-    font-weight: $font-weight-sans-bold;
-  }
-
-  &--light {
-    font-weight: $font-weight-sans-light;
-  }
-
-  // Use to enable fixed-width numerals for charts and tables
-  &--tabularnums {
-    font-feature-settings: 'tnum' 1; // Fallback for IE11
-    font-variant-numeric: tabular-nums; // Modern browsers
-  }
-}
-
 .s-font-ui {
   font-size: $font-ui-size;
   line-height: $font-ui-line-height;
-  @include s-font-ui;
+  @include s-font-note;
 }
 
 .s-font-ui-s {
   font-size: $font-ui-s-size;
   line-height: $font-ui-s-line-height;
-  @include s-font-ui;
+  @include s-font-note;
 }
