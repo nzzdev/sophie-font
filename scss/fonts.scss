@@ -9,6 +9,11 @@
   font-family: $font-family-serif;
   font-weight: $font-weight-serif-regular;
   @include font-color;
+
+	:root:not(:has(.font-sans)) & {
+		//we're in nuxt territory
+		font-weight: $font-weight-serif-nuxt-regular;
+	}
 }
 
 .s-font-text-s {
