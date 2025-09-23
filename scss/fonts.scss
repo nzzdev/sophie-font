@@ -10,7 +10,7 @@
   font-weight: $font-weight-serif-regular;
   @include font-color;
 
-	:root:not(:has(.font-sans)) & {
+	:not(:has(.font-sans)) & {
 		//we're in nuxt territory
 		font-weight: $font-weight-serif-nuxt-regular;
 	}
@@ -41,7 +41,7 @@
   font-weight: $font-weight-sans-regular;
 	@include font-color;
 
-	:root:not(:has(.font-sans)) & {
+	:not(:has(.font-sans)) & {
 		//we're in nuxt territory
 		font-weight: $font-weight-sans-nuxt-regular;
 	}
@@ -53,7 +53,7 @@
   &--light {
     font-weight: $font-weight-sans-light;
 
-	  :root:not(:has(.font-sans)) & {
+	  :not(:has(.font-sans)) & {
 			//we're in nuxt territory
 			font-weight: $font-weight-sans-nuxt-light;
 		}
@@ -105,11 +105,21 @@
 .s-font-serif {
   font-family: $font-family-serif;
   font-weight: $font-weight-serif-regular;
+
+	:not(:has(.font-sans)) & {
+		//we're in nuxt territory
+		font-weight: $font-weight-serif-nuxt-regular;
+	}
 }
 
 .s-font-sans {
   font-family: $font-family-sans;
   font-weight: $font-weight-sans-regular;
+
+	:not(:has(.font-sans)) & {
+		//we're in nuxt territory
+		font-weight: $font-weight-sans-nuxt-regular;
+	}
 }
 
 .s-font-ui {
