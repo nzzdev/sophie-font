@@ -45,12 +45,8 @@ $font-ui-s-line-height: 1.375rem; // This would correspondent to 22px
 
 // Provides fallback values for all cases where we depend on the old @font-face definitions.
 // @todo Replace once the old webview has been retired.
-@mixin nuxt-fallback($font-weight) {
-		:is(
-			#__nzz #__layout, /* nuxt IDs, should avoid the performance penalty of :not(:has()) */
-			#webviev, /* Webview ID */
-			:not(:has(.font-sans)) /* Fallback for Q editor and print export */
-		) & {
+@mixin nuxt-fallback($font-weight, $class: '--nzz-font-sans') {
+		&:not(.#{$class} &) {
 		font-weight: $font-weight;
 	}
 }

@@ -7,9 +7,7 @@
   color: #000000;
   color: var(--q-primary-text-color, #000000);
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-text-s {
+.s-font-text-s:not(.--nzz-font-serif .s-font-text-s) {
   font-weight: 300;
 }
 .s-font-text-s--strong {
@@ -24,9 +22,7 @@
   color: #000000;
   color: var(--q-primary-text-color, #000000);
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-text {
+.s-font-text:not(.--nzz-font-serif .s-font-text) {
   font-weight: 300;
 }
 .s-font-text--strong {
@@ -41,9 +37,7 @@
   color: #000000;
   color: var(--q-primary-text-color, #000000);
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-note-s {
+.s-font-note-s:not(.--nzz-font-sans .s-font-note-s) {
   font-weight: 100;
 }
 .s-font-note-s--strong {
@@ -52,9 +46,7 @@
 .s-font-note-s--light {
   font-weight: 300;
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-note-s--light {
+.s-font-note-s--light:not(.--nzz-font-sans .s-font-note-s--light) {
   font-weight: 50;
 }
 .s-font-note-s--tabularnums {
@@ -70,9 +62,7 @@
   color: #000000;
   color: var(--q-primary-text-color, #000000);
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-note {
+.s-font-note:not(.--nzz-font-sans .s-font-note) {
   font-weight: 100;
 }
 .s-font-note--strong {
@@ -81,9 +71,7 @@
 .s-font-note--light {
   font-weight: 300;
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-note--light {
+.s-font-note--light:not(.--nzz-font-sans .s-font-note--light) {
   font-weight: 50;
 }
 .s-font-note--tabularnums {
@@ -122,9 +110,7 @@
   font-family: nzz-serif, var(--nzz-font-serif, "NZZ Serif"), "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-serif {
+.s-font-serif:not(.--nzz-font-serif .s-font-serif) {
   font-weight: 300;
 }
 
@@ -132,9 +118,7 @@
   font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 400;
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-sans {
+.s-font-sans:not(.--nzz-font-sans .s-font-sans) {
   font-weight: 100;
 }
 
@@ -146,9 +130,7 @@
   color: #000000;
   color: var(--q-primary-text-color, #000000);
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-ui {
+.s-font-ui:not(.--nzz-font-sans .s-font-ui) {
   font-weight: 100;
 }
 .s-font-ui--strong {
@@ -157,9 +139,7 @@
 .s-font-ui--light {
   font-weight: 300;
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-ui--light {
+.s-font-ui--light:not(.--nzz-font-sans .s-font-ui--light) {
   font-weight: 50;
 }
 .s-font-ui--tabularnums {
@@ -175,9 +155,7 @@
   color: #000000;
   color: var(--q-primary-text-color, #000000);
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-ui-s {
+.s-font-ui-s:not(.--nzz-font-sans .s-font-ui-s) {
   font-weight: 100;
 }
 .s-font-ui-s--strong {
@@ -186,9 +164,7 @@
 .s-font-ui-s--light {
   font-weight: 300;
 }
-:is(#__nzz #__layout,
-#webviev,
-:not(:has(.font-sans))) .s-font-ui-s--light {
+.s-font-ui-s--light:not(.--nzz-font-sans .s-font-ui-s--light) {
   font-weight: 50;
 }
 .s-font-ui-s--tabularnums {
