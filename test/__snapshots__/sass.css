@@ -1,8 +1,25 @@
 /* fonts.scss */
+@layer nuxt-fallback, q-custom-code-support;
+@layer nuxt-fallback {
+  /* use a layer to define the custom property */
+  /* This way the "unlayered" property will take precedence if available */
+  :root {
+    --nzz-font-sans: nzz-sans-serif;
+    --nzz-font-serif: nzz-serif;
+    --nzz-font-serif-alt: nzz-serif-alt;
+  }
+}
+@layer q-custom-code-support {
+  :root {
+    --font-family-sans: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    --font-family-serif: var(--nzz-font-serif, "NZZ Serif"), Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    --font-family-serif-alt: var(--nzz-font-serif-alt, "NZZ Serif Alt"), Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  }
+}
 .s-font-text-s {
   line-height: 28px;
   font-size: 18px;
-  font-family: nzz-serif, var(--nzz-font-serif, "NZZ Serif"), "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--nzz-font-serif, "NZZ Serif"), "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
@@ -17,7 +34,7 @@
 .s-font-text {
   font-size: 20px;
   line-height: 32px;
-  font-family: nzz-serif, var(--nzz-font-serif, "NZZ Serif"), "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--nzz-font-serif, "NZZ Serif"), "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
@@ -32,7 +49,7 @@
 .s-font-note-s {
   font-size: 12px;
   line-height: 16px;
-  font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 400;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
@@ -57,7 +74,7 @@
 .s-font-note {
   font-size: 14px;
   line-height: 20px;
-  font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 400;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
@@ -80,7 +97,7 @@
 }
 
 .s-font-title-s {
-  font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 500;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
@@ -89,7 +106,7 @@
 }
 
 .s-font-title {
-  font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 500;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
@@ -98,7 +115,7 @@
 }
 
 .s-font-title-l {
-  font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 500;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
@@ -107,7 +124,7 @@
 }
 
 .s-font-serif {
-  font-family: nzz-serif, var(--nzz-font-serif, "NZZ Serif"), "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--nzz-font-serif, "NZZ Serif"), "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
 .s-font-serif:not(.--nzz-font-serif .s-font-serif) {
@@ -115,7 +132,7 @@
 }
 
 .s-font-sans {
-  font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 400;
 }
 .s-font-sans:not(.--nzz-font-sans .s-font-sans) {
@@ -125,7 +142,7 @@
 .s-font-ui {
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 400;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
@@ -150,7 +167,7 @@
 .s-font-ui-s {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  font-family: nzz-sans-serif, var(--nzz-font-sans, "NZZ Sans"), -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: var(--nzz-font-sans, "NZZ Sans"), system-ui, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: 400;
   color: #000000;
   color: var(--q-primary-text-color, #000000);
