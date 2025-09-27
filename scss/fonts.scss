@@ -39,6 +39,7 @@
 
 	&--strong {
 		font-weight: $font-weight-serif-bold;
+	  @include nuxt-fallback($font-weight-serif-bold, '--nzz-font-serif')
 	}
 }
 
@@ -49,6 +50,7 @@
 
 	&--strong {
 		font-weight: $font-weight-serif-bold;
+	  @include nuxt-fallback($font-weight-serif-bold, '--nzz-font-serif')
 	}
 }
 
@@ -60,6 +62,7 @@
 
 	&--strong {
 		font-weight: $font-weight-sans-bold;
+	  @include nuxt-fallback($font-weight-sans-bold)
 	}
 
 	&--light {
