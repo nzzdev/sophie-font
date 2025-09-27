@@ -30,6 +30,9 @@
 .s-font-text-s--strong {
   font-weight: 500;
 }
+.s-font-text-s--strong:not(.--nzz-font-serif .s-font-text-s--strong) {
+  font-weight: 500;
+}
 
 .s-font-text {
   font-size: 20px;
@@ -45,6 +48,9 @@
 .s-font-text--strong {
   font-weight: 500;
 }
+.s-font-text--strong:not(.--nzz-font-serif .s-font-text--strong) {
+  font-weight: 500;
+}
 
 .s-font-note-s {
   font-size: 12px;
@@ -58,6 +64,9 @@
   font-weight: 100;
 }
 .s-font-note-s--strong {
+  font-weight: 500;
+}
+.s-font-note-s--strong:not(.--nzz-font-sans .s-font-note-s--strong) {
   font-weight: 500;
 }
 .s-font-note-s--light {
@@ -83,6 +92,9 @@
   font-weight: 100;
 }
 .s-font-note--strong {
+  font-weight: 500;
+}
+.s-font-note--strong:not(.--nzz-font-sans .s-font-note--strong) {
   font-weight: 500;
 }
 .s-font-note--light {
@@ -153,6 +165,9 @@
 .s-font-ui--strong {
   font-weight: 500;
 }
+.s-font-ui--strong:not(.--nzz-font-sans .s-font-ui--strong) {
+  font-weight: 500;
+}
 .s-font-ui--light {
   font-weight: 300;
 }
@@ -176,6 +191,9 @@
   font-weight: 100;
 }
 .s-font-ui-s--strong {
+  font-weight: 500;
+}
+.s-font-ui-s--strong:not(.--nzz-font-sans .s-font-ui-s--strong) {
   font-weight: 500;
 }
 .s-font-ui-s--light {
